@@ -4,6 +4,7 @@ import { selectUser } from "../features/userSlice";
 import db from "../firebase";
 import "./PlansScreen.css";
 import { loadStripe } from "@stripe/stripe-js";
+import config from "../config";
 
 function PlansScreen() {
   const [products, setProducts] = useState([]);
@@ -77,7 +78,7 @@ function PlansScreen() {
         // Init Stripe
 
         const stripe = await loadStripe(
-          "pk_test_51JRHMtIIKHpzPlYRAjwL12xCisTgdikfA9c8HFeG2dcuq83McExs3krEGOGCpIJmNr2Tcl8QLVBb33WUyiwUfdCg00NxGNUcCP"
+          config.PUB_KEY
         );
         stripe.redirectToCheckout({ sessionId });
       }
