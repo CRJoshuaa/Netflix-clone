@@ -1,3 +1,10 @@
+## Brief Description
+  This Netflix clone was created by following Sonny Sangha's 5-Day Netflix-React Challenge on Youtube. The build was created using React.js, Redux and Google Firebase.
+  This clone is able to conduct basic features such as displaying of show posters according to predetermined filters, as well as other features such as authentication and plan purchasing. Plan purchasing built using Stripe together with an extension from Google Firebase. 
+  
+  
+  
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app), using the [Redux](https://redux.js.org/) and [Redux Toolkit](https://redux-toolkit.js.org/) template.
 
 ## Available Scripts
